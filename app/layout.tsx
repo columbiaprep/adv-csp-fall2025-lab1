@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import ShinyButton from "./components/sample-component";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

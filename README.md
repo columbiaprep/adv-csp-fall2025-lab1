@@ -20,17 +20,64 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Lab: Working as a Team
 
-To learn more about Next.js, take a look at the following resources:
+By end of class, you must split up the following tasks and divide and conquer. **You may not use AI to complete this lab.**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Call-to-Action Alert 
+Create an alert box that isn't just for information, but actively encourages a user to perform an action.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+HeroUI Components to Use:
 
-## Deploy on Vercel
+Alert: To display the main message (e.g., "Your profile is incomplete!").
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Button: For the direct call-to-action (e.g., "Complete Now").
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2. Labeled Progress Bar 
+Build a progress bar that sits inside a container and includes a title or label to provide context for what the bar represents.
+
+HeroUI Components to Use:
+
+Card: To serve as the container and provide a title area.
+
+Progress: To display the visual progress itself.
+
+3. Profile Avatar with Status 
+Design a simple user avatar that includes a status indicator, perfect for showing if a user is online, away, or offline.
+
+HeroUI Components to Use:
+
+Avatar: To display the user's image or initials.
+
+Indicator: To overlay a small colored dot on the avatar representing their status.
+
+4. Simple Confirmation Modal 
+Construct a basic modal dialog that asks the user for confirmation and provides "Confirm" and "Cancel" actions.
+
+HeroUI Components to Use:
+
+Modal: To create the dialog window and backdrop.
+
+Button: For the confirmation and cancellation actions.
+
+Of course. Here are two more simple options.
+
+5. Input with Action Button 🔎
+Create a common UI element that pairs an input field with a button, such as a search bar or a field for submitting a coupon code.
+
+HeroUI Components to Use:
+
+Input: For the text entry field.
+
+Button: For the submit or search action.
+
+Certainly. Here are four more simple component ideas following the same pattern.
+
+6. Notified Action Button 🔔
+Create a button that includes a badge, typically used to show a count for items in a cart, unread messages, or pending friend requests.
+
+HeroUI Components to Use:
+
+Button: The primary clickable element.
+
+Badge: To display the notification count, positioned on the corner of the button.
