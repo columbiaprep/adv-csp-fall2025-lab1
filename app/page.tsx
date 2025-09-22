@@ -8,6 +8,8 @@ export default function Home() {
             
               <ModalComponent />
 import InputAction from "./components/input-action";
+import ArmenBox from "./components/progress-component";
+
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
               <ShinyButton />
               <h1 className="bg-sky-900 text-green-400 border-red-300 border-10">Hey</h1>
               <InputAction />
+              <h1 className="bg-sky-500 text-green-100 border-red-600 border-10">Hey</h1>
+              <ArmenBox />
     </div>
   );
 }
