@@ -23,7 +23,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ## Lab 2: Adding Styles
 
-By end of class, you must style your component according to the below style guide.
+By end of class, you must style your component according to the below style guide. Utilize the documentation available at [Tailwind CSS](https://tailwindcss.com/docs/styling-with-utility-classes) to help you in your mission. **Choose the same component you started in Lab 1**
 
 
 | Role | Color Name | Example Tailwind Class |
@@ -36,7 +36,8 @@ By end of class, you must style your component according to the below style guid
 | **Subtle Border** | Medium Gray | `border-slate-300`|
 | **Neutral** | White | `text-white` |
 
-**Choose the same component you started in Lab 1**
+Official Font
+The primary font used across the CGPS website is Open Sans. In Tailwind, you can apply this using the font-sans utility class.
 
 1. Call-to-Action Alert
 Alert Box: The background should be the Accent / CGPS Yellow, and the text should be Primary Text.
