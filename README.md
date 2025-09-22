@@ -40,44 +40,34 @@ Official Font
 The primary font used across the CGPS website is Open Sans. In Tailwind, you can apply this using the font-sans utility class.
 
 1. Call-to-Action Alert
-Alert Box: The background should be the Accent / CGPS Yellow, and the text should be Primary Text.
-
-Button: The background should be Primary / CGPS Blue, and the text should be Neutral (white). On hover, the background should darken slightly (try hover:bg-blue-900).
-
-Font: Apply the font-sans class to all text.
+- Alert Box: The background should be the Accent / CGPS Yellow, and the text should be Primary Text.
+- Button: The background should be Primary / CGPS Blue, and the text should be Neutral (white). On hover, the background should darken slightly (try hover:bg-blue-900).
+- Font: Apply the font-sans class to all text.
 
 2. Labeled Progress Bar
-Card Container: The background should be UI Background.
-
-Title/Label: The text color should be Primary Text.
-
-Progress Bar: The color of the bar itself should be Primary / CGPS Blue.
-
-Font: Apply the font-sans class to the title.
+- Card Container: The background should be UI Background.
+- Title/Label: The text color should be Primary Text.
+- Progress Bar: The color of the bar itself should be Primary / CGPS Blue.
+- Font: Apply the font-sans class to the title.
 
 3. Profile Avatar with Status
-Status Indicator: The indicator dot’s background color should be Success/Confirmation to show the user is "Online".
+- Status Indicator: The indicator dot’s background color should be Success/Confirmation to show the user is "Online".
+- Placeholder Text: Give whater placeholder text you add a Primary / CGPS Blue background and apply the font-sans class to the text.
 
 4. Simple Confirmation Modal
-Confirm Button: This is a positive action. Style it with a Success/Confirmation background and Neutral text.
-
-Cancel Button: This is a neutral action. Style it with a UI Background and Primary Text. On hover, its background should get slightly darker (hover:bg-slate-200).
-
-Font: Make sure the button text uses font-sans.
+- Confirm Button: This is a positive action. Style it with a Success/Confirmation background and Neutral text.
+- Cancel Button: This is a neutral action. Style it with a UI Background and Primary Text. On hover, its background should get slightly darker (hover:bg-slate-200).
+- Font: Make sure the button text uses font-sans.
 
 5. Input with Action Button 🔎
-Input Field: Give it a Subtle Border. When the user clicks on it (focus), the border color should change to Primary / CGPS Blue.
-
-Button: Style it with a Primary / CGPS Blue background and Neutral text.
-
-Font: Apply font-sans to the input's placeholder and the button text.
+- Input Field: Give it a Subtle Border. When the user clicks on it (focus), the border color should change to Primary / CGPS Blue.
+- Button: Style it with a Primary / CGPS Blue background and Neutral text.
+- Font: Apply font-sans to the input's placeholder and the button text.
 
 6. Notified Action Button 🔔
-Button: Style it with a Primary / CGPS Blue background and Neutral text.
-
-Badge: Make it pop! Give it an Accent / CGPS Yellow background and Primary Text.
-
-Font: Apply font-sans to the button and badge text.
+- Button: Style it with a Primary / CGPS Blue background and Neutral text.
+- Badge: Make it pop! Give it an Accent / CGPS Yellow background and Primary Text.
+- Font: Apply font-sans to the button and badge text.
 
 The primary font used across the CGPS website is Open Sans. In Tailwind, you can apply this using the font-sans utility class.
 
@@ -89,56 +79,40 @@ By end of class, you must split up the following tasks and divide and conquer. *
 Create an alert box that isn't just for information, but actively encourages a user to perform an action.
 
 HeroUI Components to Use:
-
-Alert: To display the main message (e.g., "Your profile is incomplete!").
-
-Button: For the direct call-to-action (e.g., "Complete Now").
+- Alert: To display the main message (e.g., "Your profile is incomplete!").
+- Button: For the direct call-to-action (e.g., "Complete Now").
 
 2. Labeled Progress Bar 
 Build a progress bar that sits inside a container and includes a title or label to provide context for what the bar represents.
 
 HeroUI Components to Use:
-
-Card: To serve as the container and provide a title area.
-
-Progress: To display the visual progress itself.
+- Card: To serve as the container and provide a title area.
+- Progress: To display the visual progress itself.
 
 3. Profile Avatar with Status 
 Design a simple user avatar that includes a status indicator, perfect for showing if a user is online, away, or offline.
 
 HeroUI Components to Use:
-
-Avatar: To display the user's image or initials.
-
-Indicator: To overlay a small colored dot on the avatar representing their status.
+- Avatar: To display the user's image or initials.
+- Indicator: To overlay a small colored dot on the avatar representing their status.
 
 4. Simple Confirmation Modal 
 Construct a basic modal dialog that asks the user for confirmation and provides "Confirm" and "Cancel" actions.
 
 HeroUI Components to Use:
-
-Modal: To create the dialog window and backdrop.
-
-Button: For the confirmation and cancellation actions.
-
-Of course. Here are two more simple options.
+- Modal: To create the dialog window and backdrop.
+- Button: For the confirmation and cancellation actions.
 
 5. Input with Action Button 🔎
 Create a common UI element that pairs an input field with a button, such as a search bar or a field for submitting a coupon code.
 
 HeroUI Components to Use:
-
-Input: For the text entry field.
-
-Button: For the submit or search action.
-
-Certainly. Here are four more simple component ideas following the same pattern.
+- Input: For the text entry field.
+- Button: For the submit or search action.
 
 6. Notified Action Button 🔔
 Create a button that includes a badge, typically used to show a count for items in a cart, unread messages, or pending friend requests.
 
 HeroUI Components to Use:
-
-Button: The primary clickable element.
-
-Badge: To display the notification count, positioned on the corner of the button.
+- Button: The primary clickable element.
+- Badge: To display the notification count, positioned on the corner of the button.
