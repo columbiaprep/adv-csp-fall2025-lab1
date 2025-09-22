@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@heroui/react";
+import { Progress, Button } from "@heroui/react";
 
 export default function ShinyButton() {
     return (
