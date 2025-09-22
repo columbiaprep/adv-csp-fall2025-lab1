@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroui/modal": "^2.2.23",
     "@heroui/badge": "^2.2.16",
+    "@heroui/input": "^2.4.27",
     "@heroui/react": "^2.8.4",
     "@heroui/system": "^2.4.22",
     "@heroui/theme": "^2.4.22",
