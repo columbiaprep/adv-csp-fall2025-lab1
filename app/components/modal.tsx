@@ -43,15 +43,12 @@ export default function ModalComponent() {
                   className="rounded-lg bg-slate-100 text-blue-600 hover:bg-slate-200 font-sans px-2" 
                   variant="flat" 
                   onPress={onClose}
-                >
-                  Close
+                >Close
                 </Button>
                 <Button 
                   className="bg-green-500 text-white rounded-lg font-sans px-2" 
                   variant="flat" 
-                  onPress={onClose}
-                >
-                  Thing
+                  onPress={onClose}>Thingy
                 </Button>
               </ModalFooter>
             </>
