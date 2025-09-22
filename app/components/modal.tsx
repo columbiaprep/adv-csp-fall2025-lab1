@@ -14,37 +14,44 @@ export default function ModalComponent() {
 
   return (
     <>
-      <Button onPress={onOpen}>Open Modal</Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
-        <ModalContent>
+      <Button className="border-blue-800 border-10 bg-blue-800 rounded-full" onPress={onOpen}>Open Modal</Button>
+      <Modal className="mt-6" isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" 
+        classNames={{
+          body: "py-6",
+          backdrop: "bg-[#292f46]",
+          base: "border-[#292f46] bg-[#19172c] dark:bg-blue-800 text-[#000000] max-w-4xl",
+          header: "border-b-[1px] border-[#292f46] flex flex-row justify-between items-center",
+          footer: "border-t-[1px] border-[#292f46]",
+          
+        }}
+        >
+        <ModalContent className="rounded-xl justify-center items-center">
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">
+                <h2 className="text-xl font-semibold">
+                    Ts Modal
+                </h2>
+              </ModalHeader>
               <ModalBody>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pulvinar risus non
-                  risus hendrerit venenatis. Pellentesque sit amet hendrerit risus, sed porttitor
-                  quam.
-                </p>
-                <p>
-                  Magna exercitation reprehenderit magna aute tempor cupidatat consequat elit dolor
-                  adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum quis. Velit duis sit
-                  officia eiusmod Lorem aliqua enim laboris do dolor eiusmod. Et mollit incididunt
-                  nisi consectetur esse laborum eiusmod pariatur proident Lorem eiusmod et. Culpa
-                  deserunt nostrud ad veniam.
+                  please work 🙏
                 </p>
               </ModalBody>
-              <ModalFooter>
-                <Button color="danger" variant="light" onPress={onClose}>
+              <ModalFooter className="flex justify-center items-center gap-4 p-6">
+                <Button 
+                  className="rounded-lg bg-slate-100 text-blue-600 hover:bg-slate-200 font-sans px-2" 
+                  variant="flat" 
+                  onPress={onClose}
+                >
                   Close
                 </Button>
-                <Button color="primary" onPress={onClose}>
-                  Action
+                <Button 
+                  className="bg-green-500 text-white rounded-lg font-sans px-2" 
+                  variant="flat" 
+                  onPress={onClose}
+                >
+                  Thing
                 </Button>
               </ModalFooter>
             </>
