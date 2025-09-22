@@ -20,7 +20,67 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Lab: Working as a Team
+
+## Lab 2: Adding Styles
+
+By end of class, you must style your component according to the below style guide.
+
+
+| Role | Color Name | Example Tailwind Class |
+| :--- | :--- | :--- |
+| **Primary / CGPS Blue** | Dark Blue | `bg-blue-800` |
+| **Accent / CGPS Yellow** | Golden Yellow | `bg-amber-400` |
+| **Success / Confirmation** | Strong Green | `bg-emerald-500` |
+| **UI Background** | Light Gray | `bg-slate-100` |
+| **Primary Text** | Dark Slate | `text-slate-800` |
+| **Subtle Border** | Medium Gray | `border-slate-300`|
+| **Neutral** | White | `text-white` |
+
+**Choose the same component you started in Lab 1**
+
+1. Call-to-Action Alert
+Alert Box: The background should be the Accent / CGPS Yellow, and the text should be Primary Text.
+
+Button: The background should be Primary / CGPS Blue, and the text should be Neutral (white). On hover, the background should darken slightly (try hover:bg-blue-900).
+
+Font: Apply the font-sans class to all text.
+
+2. Labeled Progress Bar
+Card Container: The background should be UI Background.
+
+Title/Label: The text color should be Primary Text.
+
+Progress Bar: The color of the bar itself should be Primary / CGPS Blue.
+
+Font: Apply the font-sans class to the title.
+
+3. Profile Avatar with Status
+Status Indicator: The indicator dot’s background color should be Success/Confirmation to show the user is "Online".
+
+4. Simple Confirmation Modal
+Confirm Button: This is a positive action. Style it with a Success/Confirmation background and Neutral text.
+
+Cancel Button: This is a neutral action. Style it with a UI Background and Primary Text. On hover, its background should get slightly darker (hover:bg-slate-200).
+
+Font: Make sure the button text uses font-sans.
+
+5. Input with Action Button 🔎
+Input Field: Give it a Subtle Border. When the user clicks on it (focus), the border color should change to Primary / CGPS Blue.
+
+Button: Style it with a Primary / CGPS Blue background and Neutral text.
+
+Font: Apply font-sans to the input's placeholder and the button text.
+
+6. Notified Action Button 🔔
+Button: Style it with a Primary / CGPS Blue background and Neutral text.
+
+Badge: Make it pop! Give it an Accent / CGPS Yellow background and Primary Text.
+
+Font: Apply font-sans to the button and badge text.
+
+The primary font used across the CGPS website is Open Sans. In Tailwind, you can apply this using the font-sans utility class.
+
+## Lab 1: Working as a Team
 
 By end of class, you must split up the following tasks and divide and conquer. **You may not use AI to complete this lab.**
 
