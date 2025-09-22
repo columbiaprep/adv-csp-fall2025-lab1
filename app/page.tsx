@@ -9,7 +9,7 @@ export default function Home() {
               <ModalComponent />
 import InputAction from "./components/input-action";
 import ArmenBox from "./components/progress-component";
-
+ 
 
 export default function Home() {
   return (
@@ -19,6 +19,7 @@ export default function Home() {
               <InputAction />
               <h1 className="bg-sky-500 text-green-100 border-red-600 border-10">Hey</h1>
               <ArmenBox />
+              <h2 className="bg-slate-100 text-slate-800 bg-blue-800">Clicks</h2>
     </div>
   );
 }
