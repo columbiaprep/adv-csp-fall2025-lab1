@@ -20,6 +20,15 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Lab 3: Developing a Component with Props
+
+By end of class, you must create a branch that will have your component on it, and you must submit a pull request of your component. You will modify your existing component to add props. See the props-example.tsx file for the format you should follow.
+
+1. Check that your imports include React
+2. Create an Interface with the data you should pass to your prop. This indicates the values and data types of each prop you are passing to the component.
+3. Modify the Component's first line to include the `React.FC< >` portion, with the brackets indicating the interface. Additionally, list the parameters (and any default values) into the parentheses.
+4. Access the parameters using the curly brace notation seen in the example.
+
 
 ## Lab 2: Adding Styles
 
