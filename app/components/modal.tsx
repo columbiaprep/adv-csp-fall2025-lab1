@@ -9,10 +9,15 @@ import {
   useDisclosure,
 } from "@heroui/react";
 
-export default function ModalComponent() {
+interface ModalComponentProps {
+  ip: string;
+}
+
+
+const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
   const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
-  return (
+  return ( 
     <>
       <Button className="border-blue-800 border-10 bg-blue-800 rounded-full" onPress={onOpen}>Open Modal</Button>
       <Modal className="mt-6" isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" 
@@ -32,9 +37,12 @@ export default function ModalComponent() {
                     Ts Modal
                 </h2>
               </ModalHeader>
-              <ModalBody>
+              <ModalBody className="text-center">
                 <p>
                   please work 🙏
+                </p>
+                <p>
+                  Your IP btw {ip}
                 </p>
               </ModalBody>
               <ModalFooter className="flex justify-center items-center gap-4 p-6">
@@ -48,7 +56,8 @@ export default function ModalComponent() {
                 <Button 
                   className="bg-green-500 text-white rounded-lg font-sans px-2" 
                   variant="flat" 
-                  onPress={onClose}>
+                  onPress={onClose}
+                  >
                     Thingy
                 </Button>
               </ModalFooter>
@@ -59,3 +68,5 @@ export default function ModalComponent() {
     </>
   );
 }
+
+export default ModalComponent;
