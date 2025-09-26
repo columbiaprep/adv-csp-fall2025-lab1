@@ -6,7 +6,7 @@ interface MyComponentProps {
   count?: number; // Optional prop
 }
 
-const MyComponent: React.FC<MyComponentProps> = ({ title, count = 0 }) => {
+const MyComponent2: React.FC<MyComponentProps> = ({ title, count = 0 }) => {
   return (
     <div>
       <h1>{title}</h1>
@@ -15,4 +15,4 @@ const MyComponent: React.FC<MyComponentProps> = ({ title, count = 0 }) => {
   );
 };
 
-export default MyComponent;
+export default MyComponent2;
