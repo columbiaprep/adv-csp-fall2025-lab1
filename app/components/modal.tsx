@@ -8,6 +8,7 @@ import {
   Button,
   useDisclosure,
 } from "@heroui/react";
+import { on } from "events";
 
 interface ModalComponentProps {
   ip: string;
@@ -20,16 +21,16 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
   return ( 
     <>
       <Button className="border-blue-800 border-10 bg-blue-800 rounded-full" onPress={onOpen}>Open Modal</Button>
-      <Modal className="mt-6" isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque" 
+      <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop="opaque"
         classNames={{
           body: "py-6",
-          backdrop: "bg-[#292f46]",
-          base: "border-[#292f46] bg-[#19172c] dark:bg-blue-800 text-[#000000] max-w-4xl",
+          backdrop: "bg-[#292f46] flex items-center justify-center",
+          base: "border-[#292f46] bg-[#19172c] dark:bg-blue-800 text-[#000000] mx-4 w-full max-w-xl",
           header: "border-b-[1px] border-[#292f46] flex flex-row justify-between items-center",
           footer: "border-t-[1px] border-[#292f46]",
         }}
-        >
-        <ModalContent className="rounded-xl justify-center items-center">
+      >
+        <ModalContent className="rounded-lg">
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
@@ -45,7 +46,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
                   Your IP btw {ip}
                 </p>
               </ModalBody>
-              <ModalFooter className="flex justify-center items-center gap-4 p-6">
+              <ModalFooter className="flex justify-center items-center gap-4 p-12">
                 <Button 
                   className="rounded-lg bg-slate-100 text-blue-600 hover:bg-slate-200 font-sans px-2" 
                   variant="flat" 
@@ -57,8 +58,8 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
                   className="bg-green-500 text-white rounded-lg font-sans px-2" 
                   variant="flat" 
                   onPress={onClose}
-                  >
-                    Thingy
+                >
+                  Do Sum 
                 </Button>
               </ModalFooter>
             </>

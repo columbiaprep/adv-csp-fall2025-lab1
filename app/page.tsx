@@ -4,7 +4,7 @@ import Image from "next/image";
 import ShinyButton from "./components/sample-component";
 import { Avatar } from "@heroui/react";
 import ModalComponent from "./components/modal";
-// IP grabber function is a mix of code gotten from chatGPT and from https://www.geeksforgeeks.org/how-to-get-users-ip-address-in-reactjs/
+// IP grabber function is a mix of code gotten from ChatGPT and from https://www.geeksforgeeks.org/how-to-get-users-ip-address-in-reactjs/
 // Everything else is my own code including prop sutff
 export default function Home() {
   const [ip, setIp] = useState("");
@@ -16,7 +16,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-sans justify-center items-center">
+    <div className="font-sans justify items-center place-content-center mx-auto max-w-xl p-4 flex flex-col">
       <ModalComponent ip={ip} />
     </div>
   );
