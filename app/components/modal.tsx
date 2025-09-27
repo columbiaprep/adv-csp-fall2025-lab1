@@ -15,19 +15,19 @@ interface ModalComponentProps {
 }
 
 
-const zodiacRising = [
-  "Aries Rising",
-  "Taurus Rising",
-  "Gemini Rising",
-  "Cancer Rising",
-  "Leo Rising",
-  "Virgo Rising",
-  "Libra Rising",
-  "Scorpio Rising",
-  "Sagittarius Rising",
-  "Capricorn Rising",
-  "Aquarius Rising",
-  "Pisces Rising",
+const zodiacSign = [
+  "Aries Sign",
+  "Taurus Sign",
+  "Gemini Sign",
+  "Cancer Sign",
+  "Leo Sign",
+  "Virgo Sign",
+  "Libra Sign",
+  "Scorpio Sign",
+  "Sagittarius Sign",
+  "Capricorn Sign",
+  "Aquarius Sign",
+  "Pisces Sign",
 ];
 
 
@@ -39,7 +39,7 @@ const mapIpToZodiac = (ip: string) => {
     total += parseInt(segments[index], 10);
     console.log(total);
   }
-  return zodiacRising[Math.abs(total) % zodiacRising.length];
+  return zodiacSign[Math.abs(total) % zodiacSign.length];
 };
 
 const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
@@ -92,7 +92,7 @@ const ModalComponent: React.FC<ModalComponentProps> = ({ ip }) => {
                   variant="flat" 
                   onPress={() => alert(`Your IP manifests as ${mapIpToZodiac(ip)}`)}
                 >
-                  Convert IP to Zodiac Rising
+                  Convert IP to Zodiac Sign
                 </Button>
               </ModalFooter>
             </>
