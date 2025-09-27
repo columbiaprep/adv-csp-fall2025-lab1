@@ -18,6 +18,7 @@ export default function Home() {
   return (
     <div className="font-sans justify items-center place-content-center mx-auto max-w-xl p-4 flex flex-col">
       <ModalComponent ip={ip} />
+      
     </div>
   );
 }
