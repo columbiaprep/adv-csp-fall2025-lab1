@@ -1,5 +1,10 @@
 import {Badge, Avatar} from "@heroui/react";
 
+interface ActionbuttonProps {
+  ButtonText: string;
+  ButtonClicks?: number; // Optional prop
+}
+
 export default function BermanBadge() {
   return (
     <div className="accent-yellow-500 font-sans flex gap-3 items-center">
@@ -12,13 +17,16 @@ export default function BermanBadge() {
       <Badge color="primary" content="5" size="lg">
         <Avatar radius="md" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
       </Badge>
+      <BermanButton ButtonText="primary" ButtonClicks={5}>
+        <Avatar radius="md" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+      </BermanButton>
     </div>
   );
 }
 
 import {Button} from "@heroui/react";
 
-export function BermanButton() {
+export const BermanButton: React.FC<ActionbuttonProps> = ({ ButtonText, ButtonClicks = 0 }) => {
   return (
     <div className="font-sans flex gap-4 items-center">
       <Button size="sm">Small</Button>
@@ -27,3 +35,4 @@ export function BermanButton() {
     </div>
   );
 }
+
