@@ -1,20 +1,29 @@
 "use client";
 import {Progress} from "@heroui/react";
 import {Card} from "@heroui/card";
+import React from 'react';
 
+interface ArmenBoxProps {
+  value: number;
+  label?: string;
+  cardText?: string;
+  className?: string;
+}
 
-export default function ArmenBox() {
-    return (
-      <>
-      <Progress className="max-w-md" label="Clicks" value={55} />
-
+const ArmenBox: React.FC<ArmenBoxProps> = ({
+  value,
+  label = "Clicks",
+  cardText = "Make beautiful websites regardless of your design experience.",
+  className = "max-w-md",
+}) => {
+  return (
+    <div>
+      <Progress className={className} label={label} value={value} size='lg' />
       <Card>
-
-          <p>Make beautiful websites regardless of your design experience.</p>
-        
+        <p>{cardText}</p>
       </Card>
-      </>
-    );
-  }
+  </div>
+  );
+};
 
-
+export default ArmenBox;
